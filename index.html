@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate</title>
+    <style>
+        img{
+            border: 5px solid black;
+            border-radius: 10px;
+        }
+        body{
+            background: paleturquoise;
+        }
+        button{
+            cursor: pointer;
+            background-color: palegreen;
+            border-color: green;
+            margin: 3px;
+            border-radius: 45px;
+        }
+        button:hover{
+            background-color: orange;
+            border-color: red;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .buttons{
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/sunrise-quotes-21-1586892331.jpg?crop=1.00xw:0.895xh;0,0&resize=1200:*" alt="Morning Image" id="climateImage" width="300px" height="200px">
+        <div class="buttons">
+            <button onclick="morning()">Morning</button>
+            <button onclick="afternoon()">AfterNoon</button>
+            <button onclick="night()">Night</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
